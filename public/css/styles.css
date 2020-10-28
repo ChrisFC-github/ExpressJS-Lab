@@ -1,0 +1,15 @@
+body {
+    background: rgb(248, 248, 248);
+    color: rgb(44, 44, 44);
+}
+
+.pageTitle {
+    margin: 0 auto;
+}
+.form-group {
+    margin: 25px;
+}
+
+.btn {
+    margin: 25px;
+}
