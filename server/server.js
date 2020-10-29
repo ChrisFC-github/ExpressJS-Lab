@@ -85,7 +85,7 @@ app.post('/formsubmissions', (req, res) => {
             console.log(outputArr);
         }
     });
-    res.send(`Hello from the web server side... Thank you for signing up the dummy labs page ^^`);
+    res.send(`Hello from the web server side... Thank you for ${req.body.firstName} ${req.body.lastName} for signing up the dummy labs page ^^`);
 });
 
 //* turns server ON by listening in on a specific port: 3000
