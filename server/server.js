@@ -62,12 +62,14 @@ app.use(bodyParser.urlencoded({extended: false}));
 //* add the necessary variable to be used by req.body in the <input name="">
 //* this handler collects the signed-up form submission from the HTML file
 app.post('/formsubmissions', (req, res) => {
+    console.log(req.body.firstName);
+    console.log(req.body.lastName);
     console.log(req.body.email);
-    console.log(req.body.password);
     let outputArr = [];
     let signedupMember = {
-        email: req.body.email,
-        password: req.body.password
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email
     };
     outputArr.push(signedupMember);
     const jsonData = JSON.stringify(outputArr);
@@ -83,7 +85,7 @@ app.post('/formsubmissions', (req, res) => {
             console.log(outputArr);
         }
     });
-    res.send('Hello from the web server side... Thank you for signing up the dummy labs page ^^');
+    res.send(`Hello from the web server side... Thank you for signing up the dummy labs page ^^`);
 });
 
 //* turns server ON by listening in on a specific port: 3000

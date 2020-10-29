@@ -12,18 +12,23 @@
 
     <form action="/formsubmissions" method="POST">
       <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" name="firstName" class="form-control" id="fname" placeholder="First Name">
+        <small id="emailHelp" class="form-text text-muted">The name your parents gave you</small>
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lastName" class="form-control" id="lname" placeholder="Last Name">
+        <small id="emailHelp" class="form-text text-muted">The name you go by when called Mr. or Ms.</small>
+      </div>
+      <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else unless its the real one haha.</small>
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        <small id="emailHelp" class="form-text text-muted">Put dummy passwords. Never the real password you have for your own sake.</small>
-      </div>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check for periodic updates</label>
+        <label class="form-check-label" for="exampleCheck1">Subscribe for our weekly dummy newsletter!</label>
       </div>
       <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
